@@ -20,7 +20,6 @@ BuildRequires:	rpmbuild(macros) >= 1.742
 # runtime (dlopened) dep actually but require it for convenience
 %requires_ge_to	SDL3 SDL3-devel
 Provides:	SDL2 = %{version}-%{release}
-Obsoletes:	SDL2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,8 +36,6 @@ the scenes.
 Summary:	SDL2-compat Header files
 Group:		Development/Libraries
 Requires:	%{name}%{?_isa} = %{version}-%{release}
-Provides:	SDL2-devel = %{version}-%{release}
-Obsoletes:	SDL2-devel
 
 %description devel
 SDL2-compat header files.
@@ -47,8 +44,6 @@ SDL2-compat header files.
 Summary:	SDL2-compat static libraries
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
-Provides:	SDL2-static = %{version}-%{release}
-Obsoletes:	SDL2-static
 
 %description static
 SDL2-compat static libraries.
