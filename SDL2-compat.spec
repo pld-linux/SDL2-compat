@@ -20,6 +20,7 @@ BuildRequires:	rpmbuild(macros) >= 1.742
 # runtime (dlopened) dep actually but require it for convenience
 %requires_ge_to	SDL3 SDL3-devel
 Provides:	SDL2 = %{version}-%{release}
+%{?_isa:Provides:	SDL2%{_isa} = %{version}-%{release}}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
