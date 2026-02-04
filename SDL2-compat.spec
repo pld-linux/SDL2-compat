@@ -4,12 +4,12 @@
 
 Summary:	SDL2 compatibility layer that uses SDL3 behind the scenes
 Name:		SDL2-compat
-Version:	2.32.62
+Version:	2.32.64
 Release:	1
 License:	Zlib (BSD-like)
 Group:		Libraries
 Source0:	http://www.libsdl.org/release/sdl2-compat-%{version}.tar.gz
-# Source0-md5:	f9ebd407b7b054491b047a40dfbd4333
+# Source0-md5:	67f7e69cfacc25c51496f2702ce32654
 Patch0:		SDL2-config.patch
 URL:		http://www.libsdl.org/
 BuildRequires:	SDL3-devel
